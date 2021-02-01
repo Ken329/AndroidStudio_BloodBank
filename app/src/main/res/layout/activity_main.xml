@@ -9,7 +9,7 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,15 +23,15 @@
 
             <LinearLayout
                 android:id="@+id/linearSearch"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     app:srcCompat="@android:drawable/ic_menu_search" />
@@ -41,28 +41,28 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Searching"
-                    android:textSize="25dp"></TextView>
+                    android:textSize="20dp"></TextView>
 
                 <LinearLayout
                     android:id="@+id/searchShow"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="10dp"
-                    android:background="#D82619"
+                    android:background="@drawable/bar"
                     android:orientation="horizontal"></LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearAdd"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     app:srcCompat="@android:drawable/ic_menu_add" />
@@ -72,28 +72,28 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:text="Adding"
-                    android:textSize="25dp"></TextView>
+                    android:textSize="20dp"></TextView>
 
                 <LinearLayout
                     android:id="@+id/addShow"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="10dp"
-                    android:background="#D82619"
+                    android:background="@drawable/bar"
                     android:orientation="horizontal"></LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearDetail"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     app:srcCompat="@android:drawable/ic_dialog_info" />
@@ -103,14 +103,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:text="Detail"
-                    android:textSize="25dp"></TextView>
+                    android:textSize="20dp"></TextView>
 
                 <LinearLayout
                     android:id="@+id/detailShow"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="10dp"
-                    android:background="#D82619"
+                    android:background="@drawable/bar"
                     android:orientation="horizontal"></LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Personal Detail"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,8 +133,8 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -154,7 +154,8 @@
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:text="Male" />
 
@@ -162,7 +163,8 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:text="Female" />
     </RadioGroup>
@@ -174,7 +176,7 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,8 +190,8 @@
         android:gravity="center"
         android:hint="Blood Type"
         android:inputType="textPersonName"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,9 +201,9 @@
         android:id="@+id/textViewAuthentication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:text="Authentication Form"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,8 +217,8 @@
         android:inputType="textPersonName"
         android:hint="Personal ID"
         android:gravity="center"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAuthentication" />
@@ -228,27 +230,36 @@
         android:inputType="textPersonName"
         android:hint="Personal Password"
         android:gravity="center"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextId" />
-    <Button
+    <LinearLayout
         android:id="@+id/buttonCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:text="Create"
+        android:background="@drawable/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/imageButtonDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"

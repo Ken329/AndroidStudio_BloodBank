@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     EditText name, email, blood, id, password;
     RadioGroup gender;
     RadioButton button;
-    Button btnCreate;
+    LinearLayout btnCreate;
     ImageButton down;
     AwesomeValidation validate;
     DatabaseReference ref;
